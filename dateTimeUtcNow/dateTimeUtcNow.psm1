@@ -2,12 +2,17 @@ function get-datetimeutcnow
 {
     param
     (
-        [switch]$dashes
+        [switch]$dashes,
+        [switch]$spaced
     )
 
     if ($dashes.IsPresent)
     {
         return (Get-Date).ToUniversalTime().ToString('yyyy-MM-dd-THHmmssfffZ')
+    }
+    if ($spaced.IsPresent)
+    {
+        return (Get-Date).ToUniversalTime().ToString('yyyy-MM-dd-T HH mm ss fff Z')
     }
     else
     {
