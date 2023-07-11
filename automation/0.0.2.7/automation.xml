@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration NetworkPath="\\172.16.30.11\me-prod-users\share\groups\sams-c2\automation" ConfigPath="\_cfg\*">
+  <Program>
+    <Name>Google Chrome</Name>
+  </Program>
+  <Program>
+    <Name>Microsoft Edge</Name>
+  </Program>
+  <Program>
+    <Name>Mozilla Firefox</Name>
+  </Program>
+</Configuration>
