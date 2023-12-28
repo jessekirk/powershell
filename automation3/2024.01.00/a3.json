@@ -1,0 +1,34 @@
+{
+    "ionicZipDllPath": "./dotnetzip.dll",
+    "shareDrive": "//172.16.30.11/me-prod-users/share/groups/sams-c2/automation",
+    "locald": null,
+    "apps": [
+        "google chrome",
+        "microsoft edge"
+    ],
+    "appsPrereq": "/_conf/*",
+    "ionicZip": [
+        {
+            "statusMessageTextWriter": "[console]::out",
+            "compressionLevel": "bestcompression",
+            "defaultExtractDirectoryRootPath": "c:/sie/authorized/applications/a3Temp/",
+            "iconFile": "./powershell_black.ico",
+            "extractExistingFile": "overwritesilently",
+            "removeUnpackedFilesAfterExecute": true,
+            "quiet": true,
+            "useZip64WhenSaving": "asnecessary"
+        }
+    ],
+    "windowStyle": [
+        "normal",
+        "minimized",
+        "maximized",
+        "hidden"
+    ],
+    "manualPkg": {
+        "pkgName": null,
+        "pkgPs1Filename": null
+    },
+    "skipGitValidation": false,
+    "deleteAllSourceFiles": false
+}
