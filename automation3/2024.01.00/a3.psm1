@@ -21,8 +21,8 @@ function a3ConvertString256Hash
 
 function a3GitPath
 {
-    if ((Get-CimInstance -ClassName Win32_LogicalDisk).DeviceID -match 'd:') { return 'd:\a3Temp' }
-    return "$env:USERPROFILE\a3Temp"
+    if ((Get-CimInstance -ClassName Win32_LogicalDisk).DeviceID -match 'd:') { return [pscustomobject]@{gitlab = 'd:\gitlab'; temp = 'd:\a3Temp' } }
+    throw 'd:\ partition does not exist. create the partition and try again.'
 }
 
 function a3CreateNewPkg
